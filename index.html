@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Music+</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="images/logo.png" alt="Saavn"><span>Music+</span></li>
+            <li>Home</li>
+            <li>About</li>
+    </nav>
+    <div class="container" id="back">
+        
+        <div class="songList">
+            <h1>Favourites</h1>
+            <div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/1.jpg" alt="1">
+                    <span class="song-name">Hey Jude</span>
+                    <span class="song-info">
+                        <span class="singer">(The Beatles)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="0"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/2.jpg" alt="2">
+                    <span class="song-name">Juddaa 2</span>
+                    <span class="song-info">
+                        <span class="singer">(Juddaa 2)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="1"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/3.jpg" alt="3">
+                    <span class="song-name">Oh Yoko!</span>
+                    <span class="song-info">
+                        <span class="singer">(John Lennon)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="2"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/3.jpg" alt="4">
+                    <span class="song-name">Imagine</span>
+                    <span class="song-info">
+                        <span class="singer">(John Lennon)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="3"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/5.jpg" alt="5">
+                    <span class="song-name">Long Road</span>
+                    <span class="song-info">
+                        <span class="singer">(Pearl Jam)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="4"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/6.jpg" alt="6">
+                    <span class="song-name">EverGlow</span>
+                    <span class="song-info">
+                        <span class="singer">(Coldplay)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="5"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/7.jpg" alt="7">
+                    <span class="song-name">Akhar</span>
+                    <span class="song-info">
+                        <span class="singer">(Lahoriye)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="6"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/8.jpg" alt="8">
+                    <span class="song-name">Tu Te Main</span>
+                    <span class="song-info">
+                        <span class="singer">(Bir Singh)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="7"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/9.jpg" alt="9">
+                    <span class="song-name">Dooba Dooba Rehta Hun</span>
+                    <span class="song-info">
+                        <span class="singer">(Silk Route)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="8"></i></span>
+                    </span>
+                </div>
+                <div class="song-item">
+                    <img class="song-cover" src="covers/10.jpg" alt="10">
+                    <span class="song-name">El Sueno</span>
+                    <span class="song-info">
+                        <span class="singer">(Diljit Dosanjh)</span>
+                        <span><i class="song-item-play fas fa-play-circle fa-2x" id="9"></i></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <i class=" fas fa-step-backward fa-2x " id="prev"></i>
+            <i class=" fas fa-play-circle fa-2x" id="master-play"></i>
+            <i class=" fas fa-step-forward fa-2x" id="forw"></i>
+        </div>
+        <div class="song-info2">
+            <img src="images/playing.gif" alt="" id="gif">
+            <p id="caption">Hey Jude - The Beatles</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

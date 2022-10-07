@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    /* background-color: rgb(224, 255, 228); */
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 4rem;
+    /* background-color: rgb(19, 9, 9); */
+    color: green;
+}
+nav ul li{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: rgb(0, 190, 0);
+}
+.brand img{
+    width: 3rem;
+    padding: 0px 9px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+.container{
+    min-height: 70vh;
+    width: 70vw;
+    color: whitesmoke;
+    background-color: black;
+    background-image: none; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center; 
+    border-radius: 15px;
+    font-family: 'Verala Round',sans-serif;
+    display: flex;
+    margin: 1.2rem auto;
+    padding:2rem
+}
+.songList h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 3rem;
+    color: green;
+}
+.song-item{
+    height: 2rem;
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    font-size:medium;
+    width: 80%;
+    /* height: 3rem; */
+    align-items: center;
+    margin: 12px 0;
+    /* width: 100%; */
+    border-radius: 34px;
+    padding: 10px 5px;
+}
+.song-item:hover{
+    background-color: rgb(0, 190, 0);
+}
+.song-cover{
+    width: 7%;
+    border-radius: 50%;
+}
+.playing{
+    width: 15%;
+    margin-left: -20px;
+    animation: mymove 10s infinite linear;
+}
+@keyframes mymove {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.song-item img:hover{
+    width: 10%;
+}
+.song-info{
+    margin: 0px 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.song-info i{
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+.bottom{
+
+    position: sticky;
+    bottom: 0rem;
+    height: 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    /* background-image: url(images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center; */
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* opacity: 0; */
+    transition: opacity 0.5s ease-in;
+}
+.icons{
+    margin-top: 20px;
+}
+.icons i{
+    /* color: white; */
+    cursor: pointer;
+}
+.icons i:hover{
+    color: rgb(0, 190, 0);
+}
+#myProgressBar{
+    width: 80vw;
+}
+.song-info2{
+    position: absolute;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    left: 10vw;
+    bottom: 3px;
+    top: 5vh;
+    opacity: 0;
+    font-weight: 500;
+    font-size: large;
+    font-family: 'Verala Round' ,sans-serif;
+    transition: opacity 0.4s ease-in;
+    /* margin: 0 23px; */
+}
+.song-info2 img{
+    width: 16%;
+    /* height: 50px; */
+}
+#caption{
+    margin: 0px 10px;
+}
+#myProgreesbar{
+    cursor: pointer;
+}
+
